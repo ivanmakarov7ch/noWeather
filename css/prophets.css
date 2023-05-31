@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(241, 228, 228);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2vw;
+}
+
+h2:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  background-color: lightblue;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 35em) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

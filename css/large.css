@@ -1,0 +1,101 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  nav ul li a {
+    padding: 0.6rem 1rem;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  .heroStats {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    border: 1px solid #000;
+    padding: 1.5rem;
+    background-color: #72efdd;
+    opacity: 0.9;
+  }
+
+  .heroStats p {
+    margin: 0;
+  }
+
+  /**********************SECTION*/
+  .firtSection {
+    /* box-shadow: 0px 0px #099b85, -0.1em 0 0.4em #0fa58e; */
+  }
+
+  section picture.secPhoto {
+    width: 40%;
+    margin: 0 0 0 2%;
+    float: right;
+  }
+
+  section picture.secPhoto img {
+    width: 100%;
+  }
+  /******************CONTACT INFO*/
+  .grid-test {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "grid-h3 grid-img"
+      "grid-pp grid-img ";
+  }
+
+  .grid-h3 {
+    display: flex;
+    justify-content: start;
+    padding-left: 130px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .grid-img {
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+
+  /*?**************************** Gallery page */
+
+  .gridGallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .hoverImg:hover {
+    box-shadow: 0 0 30px #333;
+  }
+
+  .gridGallery figure figcaption {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  /********************************************* HOME PAGE */
+  .homeInfoSection figure img {
+    width: 100%;
+  }
+
+  .homeInfoSection {
+    display: block;
+  }
+
+  .homeInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+
+  /* .homeInfoSection img {
+    align-self: end;
+  } */
+
+  /*! Five day forecast */
+  main section#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

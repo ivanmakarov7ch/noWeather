@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Fish Haven</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+    <script src="js/fishHavenBanner.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="js/weatherAPIsHome.js" defer></script>
+    <script src="js/wheatherApiFishHaven.js" defer></script>
+  </head>
+  <body>
+    <div id="banner" class="">We have some events!</div>
+    <header>
+      <img src="images/logo-wheather.png" alt="The wheather logo" />
+      <section class="headings">
+        <h1>No Weather</h1>
+        <q class="motto">There is no bad weather, there is a bad mood!</q>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven is a city in Bear Lake County, Idaho, United States.</h2>
+      <div class="heroImg">
+        <img
+          class="imgPreston"
+          src="images/fishHaven_1600x900_medium.jpg"
+          alt="The city photo"
+          sizes="100vw"
+          srcset="
+            images/fishHaven_2560x1440_large.jpg 2560w,
+            images/fishHaven_1600x900_medium.jpg 1600w,
+            images/fishHaven_1280x720_small.jpg   720w
+          "
+        />
+        <section class="heroStats">
+          <h2>Wheather Summary</h2>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Hight: <span id="temperature"></span>&#8457;</p>
+          <p>
+            Wind Chill: <span><span id="windChill"></span>&#8457;</span>
+          </p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+        </section>
+      </div>
+      <h2>5 Day Forecast</h2>
+      <section id="weatherforecast"></section>
+      <section class="firtSection">
+        <picture class="secPhoto">
+          <img src="images/fishHavenImg_540x540.jpg" alt="guy relaxing" />
+        </picture>
+        <h3>Welcome to Fish Haven!</h3>
+        <p>
+          The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in
+          1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a
+          favorite fishing spot.
+          <br />
+          <br />
+          Also Fish Haven is an unincorporated community along the shores of Bear Lake. Bear Lake is a natural
+          freshwater lake on the Idaho–Utah border in the Western United States. About 109 square miles (280 km2)
+          in size, it is split about equally between the two states; its Utah portion comprises the second-largest
+          natural freshwater lake in Utah, after Utah Lake. The lake has been called the "Caribbean of the Rockies"
+          for its unique turquoise-blue color, which is due to the refraction of calcium carbonate (limestone)
+          deposits suspended in the lake. Its water properties have led to the evolution of several unique species
+          of fauna that occur only within the lake. Bear Lake is over 250,000 years old. It was formed by fault
+          subsidence that continues today, slowly deepening the lake along the eastern side. In 1911 the majority
+          of the flow of the Bear River was diverted into Bear Lake via Mud Lake and a canal from Stewart Dam,
+          ending 11,000 years of separation between the lake and that river system.
+        </p>
+      </section>
+      <div class="homeInfo"></div>
+      <div class="grid-test">
+        <div class="grid-contInfo grid-div-p">
+          <h3 class="grid-h3">Contact Information</h3>
+          <div class="grid-p-img">
+            <p class="grid-pp">
+              Aksakovskaya Street 1<br />
+              Primorsky Krai, Russia<br />
+              Vladivostok, PC 690091 <br />
+              <br />
+              &#9742; +375 (25) 777-88-00<br />
+              &#128386; noweather@icloud.com
+            </p>
+            <a
+              href="https://www.google.com/maps/place/Vysota/@43.1191671,131.8941432,17z/data=!4m13!1m7!3m6!1s0x0:0x0!2zNDPCsDA3JzA2LjciTiAxMzHCsDUzJzUzLjkiRQ!3b1!8m2!3d43.118521!4d131.898306!3m4!1s0x5fb392096cdfca45:0xec6e91df9ec10927!8m2!3d43.1193231!4d131.8955523"
+              target="_blank"
+              ><img src="images/map.png" alt="a map" class="grid-img grid-p"
+            /></a>
+            <section class="social">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img src="images/ico_facebook_50.png" alt="facebook" class="grid-img grid-p"
+              /></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><img src="images/ico_instagram_50.png" alt="instagram" class="grid-img grid-p"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img src="images/ico_youtube_50.png" alt="youtube" class="grid-img grid-p"
+              /></a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Makarov Ivan | Minsk, Belarus |
+        <a href=" https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      </p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>

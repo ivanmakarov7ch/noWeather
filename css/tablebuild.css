@@ -1,0 +1,68 @@
+body {
+  font-family: Ubuntu, sans-serif;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+table {
+  table-layout: fixed;
+  width: 40%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #e7ffed;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+
+tbody tr {
+  background-color: rgb(55, 189, 106);
+}
+
+table {
+  background-color: #ff33cc;
+}
+
+/*colors*/
+
+thead,
+tfoot {
+  background-color: #7fb9c2;
+}
+
+/* Color Shame */
+table thead tr:nth-child(2) {
+  background-color: #628ca6;
+}
+
+.changeColor {
+  background-color: #628ca6;
+}
+
+/* padding */
+
+th,
+td {
+  padding: 5px;
+}
+
+/* cursive */
+
+.cursive {
+  font-style: oblique;
+}

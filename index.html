@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>NoW</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+    <script src="js/weatherAPIsHome.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-wheather.png" alt="The wheather logo" />
+      <section class="headings">
+        <h1>No Weather</h1>
+        <q class="motto">There is no bad weather, there is a bad mood!</q>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Welcome to our Weather site!</h2>
+      <div class="heroImg">
+        <img
+          class="imgPreston"
+          src="images/home_1600x900_medium.jpg"
+          alt="The city photo"
+          sizes="100vw"
+          srcset="
+            images/home_2560x1440_large.jpg 2560w,
+            images/home_1600x900_medium.jpg 1600w,
+            images/home_1280x720_small.jpg   720w
+          "
+        />
+      </div>
+      <section class="firtSection">
+        <h3>
+          This is a home page where you can briefly familiarize yourself with our site and the information that we
+          provide.
+        </h3>
+        <p>
+          You can find your city and check the weather in your town! We update the information often what allows
+          you to plan your weekends with family and enjoy the weather in nature!
+        </p>
+        <h6>No Weather website was created in November, 2021 by Ivan Makarov.</h6>
+      </section>
+      <div class="homeInfo"></div>
+      <div class="grid-test">
+        <div class="grid-contInfo grid-div-p">
+          <h3 class="grid-h3">Contact Information</h3>
+          <div class="grid-p-img">
+            <p class="grid-pp">
+              Aksakovskaya Street 1<br />
+              Primorsky Krai, Russia<br />
+              Vladivostok, PC 690091 <br />
+              <br />
+              &#9742; +375 (25) 777-88-00<br />
+              &#128386; noweather@icloud.com
+            </p>
+            <a
+              href="https://www.google.com/maps/place/Vysota/@43.1191671,131.8941432,17z/data=!4m13!1m7!3m6!1s0x0:0x0!2zNDPCsDA3JzA2LjciTiAxMzHCsDUzJzUzLjkiRQ!3b1!8m2!3d43.118521!4d131.898306!3m4!1s0x5fb392096cdfca45:0xec6e91df9ec10927!8m2!3d43.1193231!4d131.8955523"
+              target="_blank"
+              ><img src="images/map.png" alt="a map" class="grid-img grid-p"
+            /></a>
+            <section class="social">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img src="images/ico_facebook_50.png" alt="facebook" class="grid-img grid-p"
+              /></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><img src="images/ico_instagram_50.png" alt="instagram" class="grid-img grid-p"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img src="images/ico_youtube_50.png" alt="youtube" class="grid-img grid-p"
+              /></a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Makarov Ivan | Minsk, Belarus |
+        <a href=" https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      </p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>

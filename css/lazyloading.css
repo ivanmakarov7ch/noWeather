@@ -1,0 +1,22 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgb(165, 144, 144);
+}
+
+h1 {
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 0.1rem;
+}
+
+#grid img {
+  border: 1px solid black;
+  padding: 1px;
+  /* background: url("../images/loading.gif") center / 50px no-repeat; */
+}

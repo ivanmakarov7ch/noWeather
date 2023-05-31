@@ -1,0 +1,154 @@
+@media only screen and (min-width: 35em) {
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 1rem;
+  }
+
+  .heroImg {
+    position: relative;
+  }
+
+  .heroStats {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    border: 1px solid #000;
+    padding: 1rem;
+    font-size: 0.8em;
+    background-color: #72efdd;
+    opacity: 0.9;
+  }
+
+  .heroStats p {
+    margin: 0;
+  }
+
+  /**********************SECTION*/
+  .firtSection {
+    box-shadow: 0px 0px #099b85, -0.1em 0 0.4em #0fa58e;
+  }
+
+  section picture.secPhoto {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+  }
+
+  section picture.secPhoto img {
+    width: 100%;
+  }
+  /******************CONTACT INFO*/
+  .grid-contInfo {
+    box-shadow: 0px 0px #099b85, -0.1em 0 0.4em #0fa58e;
+  }
+
+  .grid-p-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grid-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*?**************************** Gallery page */
+  .gridGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /********************************************* HOME PAGE */
+  .homeInfoSection figure img {
+    width: 100%;
+  }
+
+  .homeInfo {
+    grid-gap: 0;
+  }
+
+  .homeInfoSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 0px #099b85, -0.1em 0 0.4em #0fa58e;
+  }
+
+  .homeInfoSection article {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  .homeInfoSection aside {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .homeInfoSection figure {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .homeInfoSection article h2 {
+    margin: 0 0 0.1rem 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .homeInfoSection article p {
+    margin: 0 0 0.1rem 0;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .homeInfoSection aside p {
+    margin: 0.1rem 0 0 0;
+    padding: 0.1rem;
+    text-align: center;
+  }
+
+  /**********************?Checkerboard order*/
+  .homeInfoSection:nth-child(2) figure {
+    grid-column: 1;
+  }
+
+  .homeInfoSection:nth-child(2) article,
+  .homeInfoSection:nth-child(2) aside {
+    grid-column: 2;
+  }
+
+  /*********************! Five day forecast */
+  main section#weatherforecast {
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 0px #099b85, -0.1em 0 0.4em #0fa58e;
+  }
+}

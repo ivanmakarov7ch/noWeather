@@ -1,0 +1,358 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16pt;
+}
+
+/********************? Banner*/
+/*Text to be displayed on Friday*/
+#banner {
+  margin: 0 auto;
+  padding: 1.5rem;
+  height: 100px;
+  border: 1px solid black;
+  background-color: yellow;
+  text-align: center;
+  font-weight: bold;
+}
+
+#banner.hideBanner {
+  display: none;
+}
+
+#banner section p {
+  margin: 0.1rem;
+  /* padding: 0; */
+  /* text-align: left; */
+}
+/****************?GENERAL STYLING*/
+header,
+nav {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  background-color: #72efdd;
+}
+
+footer {
+  background-color: #03c2fc;
+}
+
+main {
+  background-color: #64dfdf;
+  margin: 0 auto;
+  padding: 0 2% 2% 2%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+}
+
+header section h1 {
+  margin: 0;
+}
+
+header img {
+  width: 65px;
+  height: auto;
+}
+
+.imgHome {
+  max-width: 100%;
+}
+
+.imgPreston {
+  max-width: 100%;
+}
+
+headings {
+  display: flex;
+  flex-direction: column;
+}
+
+/*****************? Navigation**********/
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: black;
+}
+
+nav {
+  background-color: #03c2fc;
+  font-weight: bold;
+  padding: 0 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.active {
+  background-color: rgba(58, 154, 184, 0.5);
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: rgba(58, 154, 184, 0.9);
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/***********! Clearfix: Force an Element not to collapse *********/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/************************? MAIN */
+.heroImg {
+  margin: 2% auto;
+}
+
+.heroImg img {
+  border-radius: 8px;
+}
+
+h2 {
+  margin: 0;
+  color: #854c3d;
+  font-family: serif;
+}
+
+h3 {
+  color: #854c3d;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.heroStats {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  font-size: 0.7em;
+  background-color: #72efdd;
+  opacity: 0.9;
+}
+
+.heroStats p {
+  margin: 0;
+}
+
+main div section p {
+  text-align: left;
+}
+
+main div section p span {
+  text-align: right;
+}
+
+/**********************SECTION*/
+.firtSection {
+  background-color: #72efdd;
+}
+
+section picture.secPhoto {
+  width: 100%;
+  margin: 0 0 0 2%;
+  float: right;
+}
+
+section picture.secPhoto img {
+  width: 100%;
+}
+
+/******************CONTACT INFO*/
+.grid-img {
+  display: none;
+}
+
+.grid-contInfo {
+  background-color: #72efdd;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+/*?**************************** Gallery page */
+.gridGallery figure img {
+  max-width: 100%;
+}
+
+.gridGallery figure {
+  /* border: 1px dashed rgba(0, 0, 0, 0.26); */
+  margin: 0;
+}
+
+.gridGallery figure figcaption {
+  text-align: center;
+}
+
+.gridGallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0.3em;
+}
+
+/*?**************************** Storm Center page */
+/*?----------- FORM --------------*/
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid rgb(1, 1, 85);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: rgb(1, 1, 85);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(81, 21, 138);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: gray;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: black;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+#browser {
+  padding: 12px 92px 12px 12px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: #0000001a;
+}
+
+#ratingvalue {
+  font-weight: 900;
+  color: black;
+}
+
+/********************************************* HOME PAGE */
+.homeInfoSection figure img {
+  width: 100%;
+}
+
+.homeInfoSection {
+  display: block;
+}
+
+.homeInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin: 0 0 2% 0;
+}
+
+.homeInfoSection figure {
+  margin: 0;
+}
+
+.homeInfoSection article h2,
+.homeInfoSection article p,
+.homeInfoSection aside p {
+  text-align: center;
+}
+
+.homeInfoSection article p {
+  margin: 0.1rem 0 0.2rem 0;
+  padding: 0.2rem;
+}
+
+.homeInfoSection aside p {
+  margin: 0.5rem 0 0 0;
+}
+
+/*******************************?DECORATIONS FOR HOME PAGE*/
+.homeInfo section article h2,
+.homeInfo section aside p {
+  font-family: cursive;
+  color: #854c3d;
+}
+
+.homeInfo section article p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.homeInfo section {
+  background-color: #72efdd;
+}
+
+/*********************! Five day forecast */
+main section#weatherforecast {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.1rem;
+  background-color: #72efdd;
+}
+
+main section#weatherforecast div {
+  /* place-self: center; */
+  justify-self: center;
+}
+
+main section#weatherforecast span {
+  color: #121b9c;
+  font-weight: bold;
+}
